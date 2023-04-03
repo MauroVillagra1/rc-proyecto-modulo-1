@@ -1,0 +1,263 @@
+@import url("https://fonts.googleapis.com/css2?family=Bangers&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
+
+:root {
+  --Color1: #48285c;
+  --Color2: #9c0cf5;
+  --Color3: #ac60db;
+  --Color4: #481666;
+  --Color5: #7c469e;
+  --Color6: #9c0cf50f;
+  --Color7: white;
+  --ColorLetra1: white;
+  --ColorLetra2: Black;
+  --EspacioSeccion: 10vh;
+  --EspacioSeccion2: 0;
+  --Pelicula1: url(https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/863E75A035911DBA10F8D7EE1E433A12A1BF4915670B66597AC31C585A291942/scale?width=1200&aspectRatio=1.78&format=jpeg);
+  --Pelicula2: ;
+  --Pelicula3: ;
+  --Pelicula4: ;
+  --Letra1: "Bangers", cursive;
+  --Letra2: "Playfair Display", serif;
+}
+
+body {
+  background-color: black;
+  max-width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.Intro-AcercaDeNosotros {
+  height: 40vh;
+  text-align: center;
+  color: var(--ColorLetra1);
+  font-family: var(--ColorLetra1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 5%;
+  font-size: calc(2vh + 2vw);
+  margin-bottom: 10%;
+}
+
+.Ficha {
+  margin-bottom: 10%;
+}
+
+.Title-Intro {
+  color: var(--Color3);
+  font-family: var(--Letra1);
+}
+
+.Fila1 {
+  height: calc(30vh + 10vw);
+  display: flex;
+  background-color: var(--Color4);
+}
+
+.Foto {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.Foto .Imagen {
+  display: flex;
+  background-color: white;
+  border-radius: 100%;
+  position: relative;
+  width: 45vw;
+  height: 45vw;
+  max-height: calc(25vh + 10vw);
+  max-width: calc(25vh + 10vw);
+
+  justify-content: center;
+  align-items: center;
+}
+
+.Foto .Imagen p {
+  color: rgba(0, 0, 0, 0);
+}
+
+.Contenedor-Nombre {
+  display: flex;
+  position: absolute;
+  justify-content: flex-end;
+  width: calc(25vw + 10vh);
+  height: calc(25vh + 10vw);
+  align-items: flex-end;
+}
+
+.Nombre {
+  font-size: calc(3vw + 0.25vh);
+  display: flex;
+  justify-content: center;
+  font-family: var(--Letra1);
+  white-space: nowrap;
+  height: 20%;
+  width: 100%;
+  background-color: var(--Color3);
+  align-items: baseline;
+}
+
+.p-Nombre {
+  display: flex;
+  height: 100%;
+  align-items: center;
+}
+
+.Info {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Info ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.Info ul li {
+  color: var(--ColorLetra1);
+  font-size: calc(2vw + 2vh);
+  font-family: var(--Letra2);
+}
+
+.Fila2 {
+  height: calc(30vh + 20vw);
+  display: flex;
+  flex-direction: row;
+  max-height: 300px;
+}
+
+.Habilidades {
+  width: 33.3%;
+  height: 100%;
+  background-color: var(--Color1);
+  border-right: solid 2px var(--Color4);
+  border-left: solid 2px var(--Color4);
+}
+.Redes {
+  width: 33.3%;
+  height: 100%;
+  background-color: var(--Color1);
+  border-right: solid 2px var(--Color4);
+  border-left: solid 2px var(--Color4);
+}
+.Experiencia-Estudios {
+  width: 33.3%;
+  height: 100%;
+  background-color: var(--Color1);
+  border-right: solid 2px var(--Color4);
+  border-left: solid 2px var(--Color4);
+}
+
+.Title-All {
+  width: 100%;
+  height: 20%;
+  background-color: var(--Color1);
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-family: var(--Letra2);
+  color: var(--ColorLetra1);
+}
+
+.Componentes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: auto auto;
+  height: 70%;
+  align-items: center;
+  align-content: center;
+
+  border-top: solid 2px var(--Color4);
+}
+
+.Componentes img {
+  margin: 2%;
+  width: 40px;
+  height: 40px;
+}
+
+.Componentes-large img {
+  width: 100%;
+  height: 30%;
+}
+
+.Invert {
+  filter: invert(100%);
+}
+
+@media screen and (min-width: 768px) {
+  .Ficha {
+    display: flex;
+    flex-direction: row;
+  }
+  .Info {
+    display: none;
+  }
+  .Fila1 {
+    width: 25%;
+    height: 50vh;
+  }
+  .Foto {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .Foto .Imagen {
+    width: 20vw;
+    height: 20vw;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .Contenedor-Nombre {
+    display: none;
+  }
+
+  .Fila2 {
+    width: 75%;
+    height: 50vh;
+    max-height: none;
+  }
+
+  .Habilidades {
+    width: 33.3%;
+    height: 100%;
+    background-color: var(--Color4);
+    border-right: none;
+    border-left: solid 7px var(--Color1);
+    border-bottom: solid 7px var(--Color1);
+  }
+  .Redes {
+    background-color: var(--Color4);
+    border-right: none;
+    border-left: none;
+    border-bottom: solid 7px var(--Color1);
+  }
+  .Experiencia-Estudios {
+    background-color: var(--Color4);
+    border-right: solid 7px var(--Color1);
+    border-left: none;
+    border-bottom: solid 7px var(--Color1);
+  }
+
+  .hover-Nombre:hover {
+    display: flex;
+    background-color: gainsboro;
+    color: var(--Color2);
+    font-family: var(--Letra1);
+  }
+}
