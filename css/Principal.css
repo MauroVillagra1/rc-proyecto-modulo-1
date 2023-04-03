@@ -1,0 +1,466 @@
+@import url("https://fonts.googleapis.com/css2?family=Bangers&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
+
+:root {
+  --Color1: #48285c;
+  --Color2: #9c0cf5;
+  --Color3: #ac60db;
+  --Color4: #481666;
+  --Color5: #7c469e;
+  --Color6: #9c0cf50f;
+  --Color7: white;
+  --ColorLetra1: white;
+  --ColorLetra2: Black;
+  --EspacioSeccion: 10vh;
+  --EspacioSeccion2: 0;
+  --Pelicula1: url(https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/863E75A035911DBA10F8D7EE1E433A12A1BF4915670B66597AC31C585A291942/scale?width=1200&aspectRatio=1.78&format=jpeg);
+  --Pelicula2: ;
+  --Pelicula3: ;
+  --Pelicula4: ;
+  --Letra1: "Bangers", cursive;
+  --Letra2: "Playfair Display", serif;
+}
+
+body {
+  background-color: black;
+  max-width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.Carousel-Principal {
+  display: flex;
+  width: 100%;
+  height: calc(10vh + 70vw);
+  max-height: 80vh;
+  background-color: var(--Color4);
+  margin-bottom: var(--EspacioSeccion);
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel {
+  height: 100%;
+  width: 100%;
+}
+.carousel-inner-principal {
+  height: 100%;
+}
+
+.carousel-item-principal {
+  height: 100%;
+}
+
+.carousel-item-principal img {
+  height: 100%;
+}
+
+.Reseña {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  background-color: var(--Color4);
+  margin-bottom: var(--EspacioSeccion);
+  justify-content: center;
+}
+
+.Reseña-Titulo {
+  display: flex;
+  background-color: var(--Color1);
+  height: 20vh;
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 10vh;
+  justify-content: center;
+}
+
+.Reseña-Titulo p {
+  display: flex;
+  align-items: center;
+  font-family: var(--Letra1);
+  color: var(--ColorLetra1);
+  text-align: center;
+  padding: 0 5%;
+}
+
+.Ultimas-Pelis {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--Color4);
+  height: calc(120vh + (4 * 20vw));
+}
+
+.Pelicula-All {
+  display: flex;
+  flex-direction: row;
+  background-color: var(--Color6);
+  height: calc(20vh + 20vw);
+  width: 100%;
+  margin-bottom: 10vh;
+  padding-left: 2%;
+}
+
+.Img-Peliculas {
+  width: 50%;
+  height: 100%;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Img-Peliculas img {
+  width: 90%;
+  height: 90%;
+  border-radius: 10%;
+}
+
+.Text-Peliculas {
+  width: 50%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  margin: auto auto;
+}
+
+.Title-Text {
+  font-size: larger;
+  font-family: var(--Letra1);
+  text-align: center;
+  height: 30%;
+  color: var(--ColorLetra1);
+  font-size: 5vw;
+}
+
+.Content-Text {
+  font-size: small;
+  font-family: var(--Letra2);
+  height: 60%;
+  color: var(--ColorLetra1);
+  padding: 0 1vh;
+  overflow: hidden;
+}
+
+.VerMas {
+  margin: 0 auto;
+  font-size: smaller;
+  height: 20%;
+  color: var(--Color2);
+}
+.Paginacion {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.pagination {
+  padding: 0% 10%;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.page-link {
+  border-color: var(--Color1);
+  background-color: var(--Color3);
+  color: var(--Letra1);
+}
+
+.page-item.active .page-link {
+  background-color: var(--Color2);
+  border-color: var(--Color1);
+}
+
+.page-link:hover {
+  background-color: var(--Color7);
+  color: var(--ColorLetra2);
+}
+.Busqueda {
+  display: flex;
+  flex-direction: column;
+  height: 90vh;
+  width: 100%;
+  background-color: var(--Color4);
+  margin-bottom: var(--EspacioSeccion);
+  justify-content: center;
+}
+.Titulo-Busqueda {
+  display: flex;
+  justify-content: center;
+  background-color: var(--Color1);
+  height: 20vh;
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 10vh;
+}
+
+.Titulo-Busqueda p {
+  display: flex;
+  align-items: center;
+  font-family: var(--Letra1);
+  color: var(--ColorLetra1);
+  text-align: center;
+  padding: 0 5%;
+}
+
+.Barra-Busqueda {
+  display: flex;
+  justify-content: center;
+  height: 10vh;
+  width: 100%;
+  margin-bottom: 1vh;
+  padding: 0 5%;
+}
+
+.btn-outline-success {
+  border-color: var(--Color2);
+  color: var(--Letra2);
+  background-color: var(--Color3);
+}
+
+.btn-outline-success img {
+  width: 100%;
+  height: 100%;
+}
+
+.Categorias {
+  display: flex;
+  justify-content: center;
+  height: 5vh;
+  margin: 0 5%;
+  width: 90%;
+  margin-bottom: 10vh;
+  background-color: var(--Color4);
+}
+
+.Categorias ul {
+  display: flex;
+  list-style: none;
+  height: 100%;
+  width: 80vw;
+  overflow: hidden;
+  justify-content: flex-start;
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+  position: relative;
+}
+
+.Categorias ul li {
+  margin: 0 1vw;
+  padding: 0 1vw;
+  cursor: pointer;
+  white-space: nowrap;
+  background-color: var(--Color1);
+  height: 100%;
+  color: var(--ColorLetra1);
+  max-width: none;
+}
+
+.Categorias ul li:hover {
+  background-color: var(--Color3);
+}
+
+.Categorias .btn-Categorias {
+  display: flex;
+  justify-content: center;
+  width: 10vw;
+  height: 100%;
+  align-items: center;
+}
+
+.Categorias .btn-Categorias img {
+  width: 100%;
+  max-width: 20px;
+  height: 100%;
+  filter: invert(100%);
+  cursor: pointer;
+}
+
+.prev {
+  transform: rotateZ(180deg);
+  display: flex;
+  justify-content: flex-end;
+  position: static;
+}
+
+.next {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.Publicidad {
+  display: flex;
+  height: 40vh;
+  width: 100%;
+  background-color: var(--Color4);
+  margin-bottom: var(--EspacioSeccion);
+  flex-direction: column;
+}
+
+.Title-Publicidad {
+  display: flex;
+  justify-content: center;
+}
+
+.Title-Publicidad {
+  color: var(--ColorLetra1);
+  font-family: var(--Letra1);
+  font-size: larger;
+}
+
+.Carousel-Publicidad {
+  display: flex;
+  width: 100%;
+  height: 40vh;
+  background-color: var(--Color4);
+  margin-bottom: var(--EspacioSeccion);
+  align-items: center;
+  justify-content: center;
+}
+.carousel-item-publicidad {
+  width: 100%;
+  height: 100%;
+}
+.carousel-item-publicidad img {
+  width: 100%;
+  height: 100%;
+}
+
+.carousel-publicidad {
+  height: 90%;
+  width: 80%;
+  max-width: 40vh;
+}
+.carousel-inner-publicidad {
+  height: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .Columna1 {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+  }
+  .Columna2 {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+  }
+  .Page {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    background-color: var(--Color4);
+  }
+
+  .Reseña {
+    margin-bottom: var(--EspacioSeccion2);
+  }
+
+  .Pelicula-All {
+    margin-bottom: var(--EspacioSeccion2);
+    height: calc(10vh + 10vw);
+    background-color: var(--Color4);
+  }
+  .Busqueda {
+    margin-bottom: var(--EspacioSeccion2);
+    justify-content: initial;
+    height: 50%;
+  }
+  .Publicidad {
+    display: flex;
+    height: auto;
+    height: 50%;
+    justify-content: flex-end;
+    margin-bottom: var(--EspacioSeccion2);
+  }
+
+  .carousel-publicidad {
+    height: 100%;
+    width: 60%;
+    max-width: none;
+  }
+  .Ultimas-Pelis {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--Color6);
+    height: calc(50vh + (4 * 10vw));
+  }
+
+  .Img-Peliculas {
+    width: 50%;
+    height: 100%;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .Img-Peliculas img {
+    width: 90%;
+    height: 90%;
+    border-radius: 10%;
+  }
+
+  .Text-Peliculas {
+    width: 50%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    margin: auto auto;
+  }
+
+  .Title-Text {
+    font-family: var(--Letra1);
+    text-align: center;
+    height: 30%;
+    color: var(--ColorLetra1);
+    font-size: 3vh;
+  }
+
+  .Content-Text {
+    font-size: small;
+    font-family: var(--Letra2);
+    height: 60%;
+    color: var(--ColorLetra1);
+    padding: 0 1vh;
+    overflow: hidden;
+  }
+
+  .VerMas {
+    margin: 0 auto;
+    font-size: smaller;
+    height: 20%;
+    color: var(--Color2);
+  }
+  .Paginacion {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .pagination {
+    padding: 0% 10%;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .page-link {
+    border-color: var(--Color1);
+    background-color: var(--Color3);
+    color: var(--Letra1);
+  }
+
+  .page-item.active .page-link {
+    background-color: var(--Color2);
+    border-color: var(--Color1);
+  }
+
+  .page-link:hover {
+    background-color: var(--Color7);
+    color: var(--ColorLetra2);
+  }
+}
