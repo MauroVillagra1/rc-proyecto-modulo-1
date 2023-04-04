@@ -20,6 +20,11 @@ body {
   background-color: #7c469e;
 }
 
+/* Navbar */
+.bg-color {
+  background-color: #9c0cf5;
+}
+
 /* Footer */
 .footer {
   width: 100%;
