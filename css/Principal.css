@@ -353,6 +353,7 @@ body {
     flex-direction: row;
     width: 100%;
     background-color: var(--Color4);
+    margin-bottom: var(--EspacioSeccion2);
   }
 
   .Reseña {
